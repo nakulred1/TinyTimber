@@ -10,6 +10,12 @@ typedef struct {
     char c;
 } App;
 
+typedef struct {
+    Object super;
+    int b[30];
+    int i;
+} Store;
+
 App app = { initObject(), 0, 'X' };
 
 void reader(App*, int);
